@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+    <script src="project.js"></script>
+  </head>
+  <body>
+    <form onsubmit="saveTOLocalStorage(event)">
+      <label>sellingprice</label>
+      <input type="text" name="sellingprice" id="sellingprice" required />
+      <label>ProductType</label>
+      <input type="text" name="ProductType" id="ProductType" required />
+      <label>choose a categeory</label>
+      <select name="choose a categeory" id="choose a categeory">
+        <option value="Electronics">Electronics</option>
+        <option value="food">food</option>
+        <option value="skincare">skincare</option>
+      </select>
+      <button>Addtocart</button>
+    </form>
+    <ul id="ListOfitems"></ul>
+    <script></script>
+  </body>
+</html>
